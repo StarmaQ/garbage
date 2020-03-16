@@ -43,7 +43,7 @@ Answer
 
 Now! Time for the answer :trumpet:!
 
-First thing, we need to setup certain keywords, invariable words, that we will always use throughout the entire program, such as numbers from 1 to 16
+First thing, we need to setup certain keywords, invariable words, that we will always use throughout the entire program, such as numbers from 0 to 16
 
 
 
