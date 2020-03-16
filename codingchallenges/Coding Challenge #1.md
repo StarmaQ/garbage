@@ -16,6 +16,7 @@ print(toFrench(125)) --prints 'cent vingt-cinq'
 ```
 
 ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-1.png) 
+
 This algorithm has to work with any given number, no matter how many digits it has (you can limit it to a certain number, 12 digits is enough, meaning billions) and it has to respect all the rules the french numbering system has, such as:
 * Adding a hyphen <kbd>-</kbd> when needed
 * `80` has an `s` at the end `quatre-vingts` unlike `81` and `82`.. ect. without the `s` (`quatre-vingt-deux`)
@@ -29,4 +30,6 @@ And many other special cases that I didn't mention! For a first challenge, this 
 Goodluck on your quest! And I hope you had fun doing this! You can find a list of all the challenges [here](http://) (topic not made yet) or a github version [here](http://) (not made yet).
 
    *Signed,*
+   
+   
        ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-2.png)
