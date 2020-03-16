@@ -11,11 +11,11 @@ Now for today's challenge, the first one ever, I want you to write a function, t
 
 Basically, an algorithm to turn numbers into french words. For example, `51` would be `cinquante-cinq`, `168` would be `cent soixante-huit`, and even crazy stuff like `89564686 `which is `quatre-vingt-neuf million cinq cent soixante-quatre mille six cent quatre-vingt-six` (*jeez*).
 
-```
+```lua
 print(toFrench(125)) --prints 'cent vingt-cinq'
 ```
 
-![codingchallenge1|683x183, 75%](upload://oU11jEoy0xv5jSH9h0U3FwRvqnm.png) 
+![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-1.png) 
 This algorithm has to work with any given number, no matter how many digits it has (you can limit it to a certain number, 12 digits is enough, meaning billions) and it has to respect all the rules the french numbering system has, such as:
 * Adding a hyphen <kbd>-</kbd> when needed
 * `80` has an `s` at the end `quatre-vingts` unlike `81` and `82`.. ect. without the `s` (`quatre-vingt-deux`)
@@ -29,4 +29,4 @@ And many other special cases that I didn't mention! For a first challenge, this 
 Goodluck on your quest! And I hope you had fun doing this! You can find a list of all the challenges [here](http://) (topic not made yet) or a github version [here](http://) (not made yet).
 
    *Signed,*
-       ![signature (2)|282x90, 50%](upload://j33lunc95X6CPLbMYOjzFZLPsvw.png)
+       ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-2.png)
