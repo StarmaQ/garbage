@@ -64,7 +64,9 @@ end
 ```
 
 To make things easier, we divide each inputed number to different parts each 3 characters, which you might know
-![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Coding%20Challenge%20%231.md)
+
+![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-3.png)
+
 This makes things easier, because we would always be dealing with 3-digit numbers, and each time just add something from `multiples` according to which part you're currently in. In the upper picture for example, we just need to convert 546, add nothing, then convert 385, add "mille", then convert 1, and add "million". I hope you got the picture.
 To divide the number to parts each 3 characters
 ```
