@@ -33,3 +33,36 @@ Goodluck on your quest! And I hope you had fun doing this! You can find a list o
    
    
   ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-2.png)
+
+
+
+
+Answer
+--
+
+
+Now! Time for the answer :trumpet:!
+
+First thing, we need to setup certain keywords, invariable words, that we will always use throughout the entire program, such as numbers from 1 to 16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
