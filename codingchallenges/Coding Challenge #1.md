@@ -32,4 +32,4 @@ Goodluck on your quest! And I hope you had fun doing this! You can find a list o
    *Signed,*
    
    
-       ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-2.png)
+  ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-2.png)
