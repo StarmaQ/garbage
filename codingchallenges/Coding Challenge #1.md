@@ -28,5 +28,5 @@ And many other special cases that I didn't mention! For a first challenge, this 
 
 Goodluck on your quest! And I hope you had fun doing this! You can find a list of all the challenges [here](http://) (topic not made yet) or a github version [here](http://) (not made yet).
 
-                                                                                                    *Signed,*
-                                                                                                  ![signature (2)|282x90, 50%](upload://j33lunc95X6CPLbMYOjzFZLPsvw.png)
+   *Signed,*
+       ![signature (2)|282x90, 50%](upload://j33lunc95X6CPLbMYOjzFZLPsvw.png)
