@@ -51,10 +51,10 @@ local invariable = {"zéro", "un", "deux", "trois", "quatre", "cinq", "six", "se
 local dozens = {"dix", "vingt", "trente", "quarante", "cinquante", "soixante", "soixante-dix", "quatre-vingt"}
 local multiples = {"", "mille", "million", "milliard"}
 ```
-Notice how each number is correspondant to an index. For 1 digit numbers (the tables `invariable`) each number is positioned corresponding to itself plus one, if we wanted 5 (cinq) we would do 5+1, because cinq is at the 6th index. We have to add one because 0 (zéro) is at the first index, and arrays in lua start 1. For tens (the table `dozens`), each number is at its corresponding position as well, for example 40 (quarante) is at 4th index. And for multiples of 10, (the table `multiples`), basically thousands millions billions ect., they're positioned relative to the part of the number they're in. You'll see later that we're dividing each inputed number every 3 numbers, to make things easier. Thousands for example, is always at the second part, (the second 4th, 5th, 6th numbers), millions at third ect. The algorithm I'm writing will only support up to billions (milliard) but you can add more if you want, it's just a matter of adding them into the table.
+Notice how each number is correspondant to an index. For 1 digit numbers (the tables `invariable`) each number is positioned corresponding to itself plus one, if we wanted 5 (cinq) we would do 5+1, because cinq is at the 6th index. We have to add one because 0 (zéro) is at the first index, and arrays in lua start 1. For tens (the table `dozens`), each number is at its corresponding position as well, for example 40 (quarante) is at 4th index. And for multiples of 10, (the table `multiples`), basically thousands (mille) millions (million) billions (milliard) ect., they're positioned relative to the part of the number they're in. You'll see later that we're dividing each inputed number every 3 numbers, to make things easier. Thousands for example, is always at the second part, (the second 4th, 5th, 6th numbers), millions at third ect. The algorithm I'm writing will only support up to billions (milliard) but you can add more if you want, it's just a matter of adding them into the table.
 
 Next, let's start writing the function
-```
+```lua
 function toFrench(num)
 	local n = tostring(num) --n is a string represenation of the number, which we would use a lot
 	local space = " " --a space that we will use when concatenating
@@ -69,14 +69,14 @@ To make things easier, we divide each inputed number to different parts each 3 c
 
 This makes things easier, because we would always be dealing with 3-digit numbers, and each time just add something from `multiples` according to which part you're currently in. In the upper picture for example, we just need to convert 546, add nothing, then convert 385, add "mille", then convert 1, and add "million". I hope you got the picture.
 To divide the number to parts each 3 characters
-```
+```lua
 for part in string.gmatch(string.reverse(n),".?.?.?") do --i'm reversing the string for a reason i'll explain later
     table.insert(parts, part)
 end
 ```
 Now, it's time to get into the conversion! When I was writing my algorithm, I wrote a list of possible inputs, and started dominating possibility by possibility. I suggest you do that to break down the algorithm to smaller chunks to make things easier.
 First, let's eliminate numbers between 0-16. If a person inputed a number inputed between 0 and 16, I can instanly give him the answer, without having to do the parts thing.
-```
+```lua
 if invariable[num+1] then return invariable[num+1] end --if it's a number between 0 and 16 (the invariable ones), return what's in that number + 1
 ```
 
