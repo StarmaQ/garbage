@@ -69,6 +69,9 @@ To make things easier, we divide each inputed number to different parts each 3 c
 ![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-3.png)
 
 This makes things easier, because we would always be dealing with 3-digit numbers, and each time just add something from `multiples` according to which part you're currently in. In the upper picture for example, we just need to convert 546, add nothing, then convert 385, add "mille", then convert 1, and add "million". I hope you got the picture.
+
+![d](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-4.png)
+
 To divide the number to parts each 3 characters
 ```lua
 for part in string.gmatch(string.reverse(n),".?.?.?") do --i'm reversing the string for a reason i'll explain later, also this part might be confusing if you don't know about string patterns and iterators, but just know it splits a string every 3 characters, you can easily come up with another way
