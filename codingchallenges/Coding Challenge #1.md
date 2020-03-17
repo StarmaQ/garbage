@@ -273,6 +273,16 @@ function toFrench(num)
 end
 ```
  
+AND FINALLY! We can watch out code kicking butts 
+```
+while true do
+	wait()
+	local x = math.random(1, 999999999)
+	print(x, toFrench(x))
+end
+```
+
+And just in case this challenge annoyed brutally, [here](https://www.youtube.com/watch?v=9rmBqIFeHN8) is a funny video revenging you, by making fun of french numbers.
 
 
 
