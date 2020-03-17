@@ -24,6 +24,7 @@ This algorithm has to work with any given number, no matter how many digits it h
 * Invaribale numbers, such as `un`, `deux` .. `onze`, `douze`.../`vingt`, `trente` ..`quatre-vingt-dix`. (Basically numbers from 1 to 16; and all tens, like 10, 20, 30... to 90)
 * Numbers between 90 and 99, this is the trickest part
 * `1 000 000` and `1 000` written as `un million` and `un mille` but `100` written as just `cent` without a `un`.
+* `mille` not having an `s` when there are multiple thousands (ex: `cinq mille`),  but `million` and `milliard` ect. having an `s` if there are multiple. (ex: `cinq millions`)
 
 And many other special cases that I didn't mention! For a first challenge, this is deffintely tough, which is why you can even share a part of the challenge done, even if it doesn't fully work. Also, which is why you may wanna learn more about the french numbering system, from resources such as [this](https://www.talkinfrench.com/french-numbers/) and [this](https://www.youtube.com/watch?v=WM1FFhaWj9w&feature=emb_title).
 
