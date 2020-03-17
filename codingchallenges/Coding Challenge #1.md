@@ -277,7 +277,7 @@ end
 ```
  
 AND FINALLY! We can watch out code kicking butts 
-```
+```lua
 while true do
 	wait()
 	local x = math.random(1, 999999999)
