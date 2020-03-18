@@ -284,7 +284,7 @@ while true do
 	print(x, toFrench(x))
 end
 ```
-![](https://github.com/StarmaQ/garbage/edit/master/codingchallenges/Imgs/codingchallenge1-5.PNG)
+![](https://github.com/StarmaQ/garbage/blob/master/codingchallenges/Imgs/codingchallenge1-5.PNG)
 
 And just in case this challenge annoyed brutally, [here](https://www.youtube.com/watch?v=vx2Ru0J6I9Q) is a funny video revenging you, by making fun of french numbers.
 
