@@ -7,22 +7,26 @@ class matrix:
 
 def rot(mat, section=None):
     if not(section):
-        section = ((0, 0), (mat.size, mat.size))
-        
-    size = mat.size-1 #-1 to account for python's 0 indexed arrays
+        section = (0, mat.size)
+
+    origin, size = section[0], section[1]-1 #-1 to account for python's origin indexed arrays
     body = [row for row in mat.body]
-    body_ = body[::] #copy of body
-    
-    if size+1 == 2:
+    body_ = [row[::] for row in body] #copy of body
+
+    if size+1 >= 2:
         #take care of corners
-        body[0][0] = body_[0][size] #right upper corner to left upper corner
-        body[size][0] = body_[0][0] #left upper corner to left lower corner
-        body[size][size] = body_[size][0] #left lower corner to right lower corner
-        body[0][size] = body_[size][size] #right lower corner to right upper corner
+        body[origin][origin] = body_[origin][size] #right upper corner to left upper corner
+        body[size][origin] = body_[origin][origin] #left upper corner to left lower corner
+        body[size][size] = body_[size][origin] #left lower corner to right lower corner
+        body[origin][size] = body_[size][size] #right lower corner to right upper corner
     if size+1 > 2:
-        for i, row in enumerate(body):
-            
-        rot(mat, ((1, 1), (size-1, size-1)))
+        for x in (origin, size):
+            for y in range(origin, size):
+                if y > origin and y < size: 
+                    body[x][y] = body_[y][size-x]
+                    body[y][x] = body_[x][y]
+
+        rot(mat, (1, size))
     
     
        
@@ -33,7 +37,11 @@ def rot(mat, section=None):
 def mprint(mat):
     for row in mat:
         print(row)
-a = matrix(2)
+        
+a = matrix(4)
 mprint(a.body)
 rot(a)
 mprint(a.body)
+
+#apprently python is so cool that you can rotate a matrix just by doing:
+list(zip(*a[::-1]))
