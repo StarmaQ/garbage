@@ -44,4 +44,4 @@ rot(a)
 mprint(a.body)
 
 #apprently python is so cool that you can rotate a matrix just by doing:
-list(zip(*a[::-1]))
+reveresed(list(zip(*a)))
